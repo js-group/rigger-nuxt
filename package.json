@@ -1,0 +1,17 @@
+{
+  "name": "rigger-nuxt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "NODE_ENV=production nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "latest"
+  },
+  "author": "",
+  "license": "ISC"
+}
