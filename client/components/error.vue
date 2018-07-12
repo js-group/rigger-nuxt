@@ -1,15 +1,15 @@
 <template>
     <div class="loading-page">
-      <p>出错啦...</p>
+      <p>error出错啦...</p>
     </div>
   </template>
-  
-  <script>
-  export default {
-    
-  }
-  </script>
-  
+
+<script>
+export default {
+
+};
+</script>
+
   <style scoped>
   .loading-page {
     position: fixed;

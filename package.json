@@ -1,17 +1,27 @@
 {
-  "name": "rigger-nuxt",
+  "name": "mynuxt",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "NODE_ENV=production nuxt generate"
-  },
-  "dependencies": {
-    "nuxt": "latest"
+    "server-dev": "NODE_ENV=development ENV=dev nuxt dev",
+    "server-stg": "NODE_ENV=development ENV=stg nuxt dev",
+    "server-prd": "NODE_ENV=development ENV=prd nuxt dev",
+    "build-dev": "NODE_ENV=production ENV=dev nuxt generate",
+    "build-stg": "NODE_ENV=production ENV=stg nuxt generate",
+    "build-prd": "NODE_ENV=production ENV=prd nuxt generate"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.1.0",
+    "eslint-loader": "^2.0.0",
+    "nuxt": "*",
+    "vue-meta": "*"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint-plugin-vue": "^4.5.0",
+    "vue-eslint-parser": "^3.1.0"
+  }
 }
